@@ -1,0 +1,25 @@
+{
+  "name": "occu",
+  "version": "2.29.22",
+  "slug": "occu",
+  "description": "CCU for Homematic.",
+  "startup": "before",
+  "boot": "auto",
+  "options": {},
+  "schema": {},
+  "ports": {
+    "80/tcp": 80,
+    "90/tcp": 90,
+    "443/tcp: 443,
+    "2000/tcp": 2000,
+    "2001/tcp": 2001,
+    "2002/tcp": 2002,
+    "4430/tcp": 4430,
+    "4431/tcp": 4431,
+    "4432/tcp": 4432,
+    "8001/tcp": 8001,
+    "8002/tcp": 8002,
+    "8181/tcp": 8181,
+    "44381/tcp": 44381
+  }
+}
