@@ -1,11 +1,8 @@
 {
   "name": "occu",
-  "version": "2.29.22-2",
+  "version": "2.29.22-3",
   "slug": "occu",
   "description": "CCU for Homematic.",
-  "build_from": {
-    "armhf": "resin/rpi-raspbian:jessie"
-  },
   "startup": "before",
   "boot": "auto",
   "options": {},
