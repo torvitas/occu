@@ -1,13 +1,14 @@
 {
   "name": "occu",
-  "version": "2.29.22-5",
+  "version": "2.29.22-6",
   "slug": "occu",
   "description": "CCU for Homematic.",
+  "url": "https://github.com/torvitas/occu/tree/master/occu",
   "startup": "before",
   "boot": "auto",
   "options": {},
   "schema": {},
-  "image": "torvitas/armv7hf-hassio-occu",
+  "image": "torvitas/{arch}-hassio-occu",
   "ports": {
     "80/tcp": 80,
     "90/tcp": 90,
