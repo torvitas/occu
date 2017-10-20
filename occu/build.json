@@ -1,6 +1,0 @@
-{
-  "build_from": {
-    "armhf": "resin/armv7hf-debian:stretch"
-  },
-  "squash": false
-}

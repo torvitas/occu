@@ -1,6 +1,6 @@
 {
   "name": "occu",
-  "version": "2.29.22-4",
+  "version": "2.29.22-5",
   "slug": "occu",
   "description": "CCU for Homematic.",
   "startup": "before",
