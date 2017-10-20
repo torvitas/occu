@@ -1,0 +1,25 @@
+"description_1" : "<span class=\"translated\">With each opening / closing of the window handle sensor the blind will be moved up completely for the set time. If an up-delay  is set the blind will be moved up after the delay time has expired.</span><br/><br/>",
+
+"description_2" : "<span class=\"translated\">With each opening / closing of the window handle sensor the blind will be moved down completely for the set time. If a down-delay is set the blind will be moved down after the delay time has expired.</span><br/><br/>",
+
+"description_3" : "<span class=\"translated\">With each opening / closing of the window handle sensor the blind will be moved up completely or down completely (toggle function). If a lifting delay is set the blind will be moved after the delay time has expired.</span><br/><br/>",
+
+"description_4" : "<span class=\"translated\">With each opening / closing of the window handle sensor the blind will be moved for the set time to a required position. If a lifting delay is set the blind will be moved after the delay time has expired.</span><br/><br/>",
+
+"subset_1" : "moved up",
+"subset_2" : "moved down",
+"subset_3" : "changing between moved up and moved down",
+
+"COMMENT" : "The next keys are not in use",
+"subset_4" : "*en Offen - aus / Zu - ein",
+"subset_5" : "*en Offen - ein / Zu - aus",
+
+"subset_6" : "*en Schlie&szlig;en",
+"subset_7" : "*en &Ouml;ffnen",
+"subset_8" : "*en &Auml;ndern",
+
+"subset_9" : "*en Offen",
+"subset_10" : "*en Zu",
+
+
+
