@@ -4,36 +4,24 @@ FROM $BUILD_FROM
 ENV LANG C.UTF-8
 ENV TZ Europe/Berlin
 
-RUN echo "deb http://archive.raspberrypi.org/debian/ jessie main" >> /etc/apt/sources.list.d/raspberrypi.list \
-    && apt-get update \
-    && apt-get install -y --force-yes oracle-java8-jdk \
-    && rm -rf /var/lib/apt/lists/* \
-    && ln -s jdk-8-oracle-arm32-vfp-hflt /usr/lib/jvm/java-8-oracle
-
-ENV JAVA_HOME /usr/lib/jvm/java-8-oracle
-
-RUN apt-get update && apt-get install -y --force-yes \
+RUN apt-get update \
+    && apt-get install -y --force-yes openjdk-8-jre-headless \
         msmtp \
         tcl \
         tcllib \
         libusb-1.0-0-dev \
         supervisor \
-        --no-install-recommends && \
-        rm -rf /var/lib/apt/lists/*
-COPY HMserver /
+    && rm -rf /var/lib/apt/lists/* \
+
 COPY firmware/ /firmware/
-COPY arm-gnueabihf/packages/lighttpd/ /
-COPY arm-gnueabihf/packages-eQ-3/HS485D/ /
-COPY arm-gnueabihf/packages-eQ-3/RFD/ /
-COPY arm-gnueabihf/packages-eQ-3/WebUI/ /
-COPY arm-gnueabihf/packages-eQ-3/LinuxBasis/ /
+RUN mkdir -p /opt/hm
+COPY arm-gnueabihf/packages/lighttpd/ /opt/hm/
+COPY arm-gnueabihf/packages-eQ-3/HS485D/ /opt/hm/
+COPY arm-gnueabihf/packages-eQ-3/RFD/ /opt/hm/
+COPY arm-gnueabihf/packages-eQ-3/WebUI/ /opt/hm/
+COPY arm-gnueabihf/packages-eQ-3/LinuxBasis/ /opt/hm/
 COPY WebUI/ /
 COPY HMserver/ /
-RUN ln -s / /opt/hm && \
-    rm -rf /usr/local/* && \
-    mkdir -p /usr/local/etc && \
-    mv /etc/config /usr/local/etc/ && \
-    ln -s /usr/local/etc/config /etc/config
 COPY supervisor/ /etc/supervisor/
 
 VOLUME ["/usr/local"]
