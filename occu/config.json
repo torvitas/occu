@@ -1,6 +1,6 @@
 {
   "name": "occu",
-  "version": "2.29.22-10",
+  "version": "2.29.22-11",
   "slug": "occu",
   "description": "CCU for Homematic.",
   "url": "https://github.com/torvitas/occu/tree/master/occu",
@@ -22,6 +22,7 @@
     "8001/tcp": 8001,
     "8002/tcp": 8002,
     "8181/tcp": 8181,
+    "9292/tcp": 9292,
     "44381/tcp": 44381
   }
 }
